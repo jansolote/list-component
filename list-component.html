@@ -1,0 +1,44 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="list-component">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+   <div class="listContainer">
+     
+   </div>
+  </template>
+
+  <script>
+    /**
+     * `list-component`
+     * 
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class ListComponent extends Polymer.Element {
+      static get is() { return 'list-component'; }
+
+      static get properties() {
+        return {
+          lelementsList:{
+            type:Array,
+            value:()=>{[]}
+          }
+        };
+      }
+
+
+
+
+
+    }
+
+    window.customElements.define(ListComponent.is, ListComponent);
+  </script>
+</dom-module>
